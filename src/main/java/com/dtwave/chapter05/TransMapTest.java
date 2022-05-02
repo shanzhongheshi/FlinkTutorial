@@ -26,7 +26,7 @@ public class TransMapTest {
 
         //传入MapFunction的实现类
         stream.map(new UserExtractor()).print();
-
+        System.out.println("Flink算子测试");
         env.execute();
 
     }
